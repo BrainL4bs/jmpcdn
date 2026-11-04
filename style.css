@@ -193,34 +193,10 @@ body .header-language * {
 }
 
 /* --------------------------------------------------------------------------
-   5. HEADER ALT SATIR (.header-block_sub) & MOBIL MENU ARKA PLAN KORUMASI
+   5. HEADER ALT SATIR (.header-block_sub)
    DIKKAT: Alt menudekiler ust menudeki gibi yapildi:
    Ikon ustte, yazi altta, 72px yuksekliginde zengin kategori seridi!
    -------------------------------------------------------------------------- */
-html body .header-block_sub,
-html body .header-block .menu-block_holder,
-html body .header-block .main-menu-block,
-html body .header-block .main--menu-cont,
-html body .menu-block_holder,
-html body .main-menu-block {
-    background: #272d36 !important;
-    background-color: #272d36 !important;
-    border-radius: 0 !important;
-}
-
-html body .header-block_holder .menu-block_holder,
-html body .header-block_holder .main-menu-block,
-html body .header-block_holder .main--menu-cont {
-    background: transparent !important;
-    background-color: transparent !important;
-}
-
-html body .header-block_sub *:not(.active):not(.selected):not(.tb--badge),
-html body .menu-block_holder *:not(.active):not(.selected):not(.tb--badge),
-html body .main-menu-block *:not(.active):not(.selected):not(.tb--badge) {
-    background-color: transparent !important;
-}
-
 body .header-block_sub {
     background: #272d36 !important;
     padding-left: max(16px, calc((100% - 1428px) / 2)) !important;
@@ -319,20 +295,6 @@ body .banner-grid-item:hover {
 /* --------------------------------------------------------------------------
    6.5. FEATURED PRODUCTS (Kategori Kartlari - tb--fp-rock-container)
    -------------------------------------------------------------------------- */
-html body div:has(> .tb--fp-container),
-html body section:has(> .tb--fp-container),
-html body .tb--fp-container,
-html body .tb--fp-container.tb--fp-container--slider,
-html body .tb--fp-container.tb--fp-rock-container,
-html body [class*="tb--fp-container"],
-html body [class*="fp-rock-container"] {
-    background: transparent !important;
-    background-color: transparent !important;
-    background-image: none !important;
-    border: 0 !important;
-    box-shadow: none !important;
-}
-
 body .tb--fp-container,
 body .tb--fp-container.tb--fp-container--slider,
 body .tb--fp-container.tb--fp-rock-container {
@@ -357,18 +319,11 @@ body .tb--fp-container::-webkit-scrollbar {
     display: none !important;
 }
 
-/* Eger iceride slider/track sarmalayicisi varsa yan yana esnek diz ve arka planini seffaf yap */
-body .tb--fp-container > div:not([class*="item"]),
+/* Eger iceride slider/track sarmalayicisi varsa yan yana esnek diz */
 body .tb--fp-container .tb--fp-wrapper,
 body .tb--fp-container .tb--fp-list,
 body .tb--fp-container .tb--fp-slider,
-body .tb--fp-container [class*="rock-wrapper"],
-body .tb--fp-container [class*="rock__wrapper"],
-body .tb--fp-container [class*="rock-list"],
-body .tb--fp-container [class*="rock-slider"],
-body .tb--fp-container .swiper-container,
 body .tb--fp-container .swiper-wrapper,
-body .tb--fp-container .slick-list,
 body .tb--fp-container .slick-track {
     display: flex !important;
     align-items: stretch !important;
@@ -377,10 +332,6 @@ body .tb--fp-container .slick-track {
     max-width: 1728px !important;
     transform: none !important;
     background: transparent !important;
-    background-color: transparent !important;
-    background-image: none !important;
-    border: 0 !important;
-    box-shadow: none !important;
 }
 
 /* Slider oklarini ve Rock sablonu arka plan suslerini gizle */
@@ -964,391 +915,43 @@ body [class*="to-top"] {
 }
 
 /* --------------------------------------------------------------------------
-   10. MOBIL UYUMLULUK (TABLET & TELEFON)
+   10. MOBIL UYUMLULUK
    -------------------------------------------------------------------------- */
 @media (max-width: 1024px) {
-    html,
-    body,
-    body .wrapper,
-    body #root,
-    body .main-block {
-        overflow-x: hidden !important;
-        max-width: 100vw !important;
-    }
-
     body .header-block_holder {
         min-height: 52px !important;
         height: 52px !important;
-        padding-left: 10px !important;
-        padding-right: 10px !important;
-        justify-content: space-between !important;
-        gap: 6px !important;
-        box-sizing: border-box !important;
-    }
-
-    body .logoBlock_img {
-        max-height: 30px !important;
-        width: auto !important;
-    }
-
-    body .header-block_holder .menu-block_holder,
-    body .header-block_holder .main-menu-block {
-        overflow-x: auto !important;
-        overflow-y: hidden !important;
-        -webkit-overflow-scrolling: touch !important;
-        scrollbar-width: none !important;
-        flex-wrap: nowrap !important;
-    }
-
-    body .header-block_holder .menu-block_holder::-webkit-scrollbar,
-    body .header-block_holder .main-menu-block::-webkit-scrollbar,
-    body .header-block_sub::-webkit-scrollbar,
-    body .header-block_sub *::-webkit-scrollbar {
-        display: none !important;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
     }
 
     body .header-block_holder .main--menu-item-cont,
     body .header-block_holder .menu--block-item {
-        flex-shrink: 0 !important;
         height: 52px !important;
         padding: 0 10px !important;
-        font-size: 12px !important;
-        white-space: nowrap !important;
     }
 
     body .header-block_sub {
-        min-height: 56px !important;
-        height: 56px !important;
-        padding-left: 8px !important;
-        padding-right: 8px !important;
-        overflow-x: auto !important;
-        overflow-y: hidden !important;
-        -webkit-overflow-scrolling: touch !important;
-        scrollbar-width: none !important;
-        justify-content: flex-start !important;
-        box-sizing: border-box !important;
+        min-height: 60px !important;
+        height: 60px !important;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
     }
 
-    body .header-block_sub > *,
-    body .header-block_sub .prom-block {
-        display: flex !important;
-        flex-wrap: nowrap !important;
-        align-items: center !important;
-        overflow-x: auto !important;
-        scrollbar-width: none !important;
-    }
-
-    body .header-block_sub .prom-block_item,
     body .header-block_sub .submenu-txt {
-        flex-shrink: 0 !important;
-        height: 56px !important;
+        height: 60px !important;
         padding: 0 12px !important;
-        font-size: 11px !important;
-        white-space: nowrap !important;
-    }
-
-    body .header-block_sub .header-icon {
-        font-size: 15px !important;
-    }
-
-    body .header-block .tb--access-btns-block {
-        gap: 4px !important;
-        flex-shrink: 0 !important;
-    }
-
-    body .tb--login-btn-box,
-    body .tb--reg-btn-box {
-        padding: 0 2px !important;
+        font-size: 12px !important;
     }
 
     body .header-block .tb--access-btn {
-        height: 34px !important;
-        min-width: 0 !important;
-        padding: 0 10px !important;
+        height: 36px !important;
+        padding: 0 12px !important;
         font-size: 12px !important;
-        gap: 4px !important;
-        white-space: nowrap !important;
-    }
-
-    body .header-block .tb--access-btn i {
-        font-size: 13px !important;
-    }
-
-    /* Kategori kartlari (tb--fp-container) tablet/mobil kenar boslugu */
-    body .tb--fp-container,
-    body .tb--fp-container.tb--fp-container--slider,
-    body .tb--fp-container.tb--fp-rock-container {
-        margin: 16px auto !important;
-        padding: 0 10px !important;
-        box-sizing: border-box !important;
-    }
-
-    /* Footer kolonlari */
-    html body .footer-menu-block,
-    body .footer-container .footer-menu-block {
-        flex-wrap: wrap !important;
-        gap: 24px 16px !important;
-        padding: 16px 12px !important;
-        box-sizing: border-box !important;
-    }
-
-    html body .footer-menu-block_col,
-    body .footer-container .footer-menu-block_col {
-        min-width: 140px !important;
-        flex: 1 1 calc(50% - 16px) !important;
-    }
-
-    html body .footer-submenu,
-    body .footer-container .footer-submenu {
-        background: transparent !important;
-        border: 0 !important;
     }
 }
 
 @media (max-width: 768px) {
-    body .header-block_holder {
-        min-height: 48px !important;
-        height: 48px !important;
-        padding-left: 8px !important;
-        padding-right: 8px !important;
-    }
-
-    body .logoBlock_img {
-        max-height: 26px !important;
-    }
-
-    body .header-block .tb--access-btn {
-        height: 30px !important;
-        padding: 0 8px !important;
-        font-size: 11px !important;
-        border-radius: 5px !important;
-    }
-
-    body .header-block_sub {
-        min-height: 52px !important;
-        height: 52px !important;
-        padding-left: 6px !important;
-        padding-right: 6px !important;
-    }
-
-    body .header-block_sub .submenu-txt {
-        height: 52px !important;
-        padding: 0 10px !important;
-        font-size: 10.5px !important;
-        gap: 2px !important;
-    }
-
-    /* Mobilde 2. satir menu (Ana Sayfa, Slot, Canli Casino vb.) beyaz arka plan duzeltmesi */
-    html body .header-block_sub,
-    html body .header-block .menu-block_holder,
-    html body .header-block .main-menu-block,
-    html body .header-block .main--menu-cont,
-    html body .header-block_holder .menu-block_holder,
-    html body .header-block_holder .main-menu-block,
-    html body .header-block_holder .main--menu-cont,
-    html body .header-block [class*="menu-block"],
-    html body .header-block [class*="main-menu"],
-    html body .menu-block_holder,
-    html body .main-menu-block,
-    html body .main--menu-cont {
-        background: #272d36 !important;
-        background-color: #272d36 !important;
-        border-radius: 0 !important;
-        margin: 0 !important;
-        width: 100% !important;
-        max-width: 100% !important;
-    }
-
-    html body .header-block_sub *:not(.active):not(.selected):not(.tb--badge),
-    html body .menu-block_holder *:not(.active):not(.selected):not(.tb--badge):not(.main-menu-block):not(.main--menu-cont),
-    html body .main-menu-block *:not(.active):not(.selected):not(.tb--badge):not(.main--menu-cont) {
-        background-color: transparent !important;
-        border-radius: 0 !important;
-    }
-
-    html body .menu--block-item,
-    html body .menu--block-item span,
-    html body .tb--menu-item_text,
-    html body .submenu-txt,
-    html body .submenu-txt span {
-        color: #ffffff !important;
-        opacity: 1 !important;
-        visibility: visible !important;
-    }
-
-    html body .menu--block-item.active,
-    html body .menu--block-item.selected,
-    html body .submenu-txt.active,
-    html body .submenu-txt.selected,
-    html body .active > .menu--block-item {
-        background: #343c47 !important;
-        background-color: #343c47 !important;
-        color: #26c2b5 !important;
-    }
-
-    html body .menu--block-item.active span,
-    html body .menu--block-item.selected span,
-    html body .submenu-txt.active span {
-        color: #26c2b5 !important;
-    }
-
-    /* Mobilde Hero Banner tam genislik */
-    html body .tb--wb-banner,
-    html body .tb--wb-banner__wrapper {
-        width: 100% !important;
-        max-width: 100% !important;
-        padding: 8px 10px 0 10px !important;
-        margin: 0 auto !important;
-        box-sizing: border-box !important;
-    }
-
-    html body .tb--wb-banner .swiper-container,
-    html body .tb--wb-banner .swiper-wrapper,
-    html body .tb--wb-banner .swiper-slide,
-    html body .tb--wb-banner a,
-    html body .tb--wb-banner picture,
-    html body .tb--wb-banner img {
-        width: 100% !important;
-        max-width: 100% !important;
-        height: auto !important;
-        display: block !important;
-        border-radius: 10px !important;
-        object-fit: cover !important;
-    }
-
-    /* Mobilde Kategori Kartlari (tb--fp-container) -> 2 Sutunlu Temiz Grid & Seffaf Zemin */
-    html body div:has(> .tb--fp-container),
-    html body section:has(> .tb--fp-container),
-    html body .tb--fp-container,
-    html body .tb--fp-container.tb--fp-container--slider,
-    html body .tb--fp-container.tb--fp-rock-container {
-        display: grid !important;
-        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-        gap: 8px !important;
-        margin: 12px auto !important;
-        padding: 0 10px !important;
-        overflow: visible !important;
-        box-sizing: border-box !important;
-        background: transparent !important;
-        background-color: transparent !important;
-        background-image: none !important;
-        border: 0 !important;
-        box-shadow: none !important;
-    }
-
-    html body .tb--fp-container > div:not([class*="item"]),
-    html body .tb--fp-container .tb--fp-wrapper,
-    html body .tb--fp-container .tb--fp-list,
-    html body .tb--fp-container .tb--fp-slider,
-    html body .tb--fp-container [class*="rock-wrapper"],
-    html body .tb--fp-container [class*="rock__wrapper"],
-    html body .tb--fp-container [class*="rock-list"],
-    html body .tb--fp-container [class*="rock-slider"],
-    html body .tb--fp-container .swiper-container,
-    html body .tb--fp-container .swiper-wrapper,
-    html body .tb--fp-container .slick-list,
-    html body .tb--fp-container .slick-track {
-        display: grid !important;
-        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-        gap: 8px !important;
-        width: 100% !important;
-        grid-column: 1 / -1 !important;
-        transform: none !important;
-        overflow: visible !important;
-        background: transparent !important;
-        background-color: transparent !important;
-        background-image: none !important;
-        border: 0 !important;
-        box-shadow: none !important;
-    }
-
-    /* Tek sayida kart varsa (orn. 5. kart PROMOSYONLAR) alt satiri tam kaplasin, sagda bosluk kalmasin */
-    html body .tb--fp-container > a:last-child:nth-child(odd),
-    html body .tb--fp-container > div > a:last-child:nth-child(odd),
-    html body .tb--fp-container > [class*="item"]:last-child:nth-child(odd),
-    html body .tb--fp-container > [class*="rock"]:last-child:nth-child(odd),
-    html body .tb--fp-container .swiper-wrapper > *:last-child:nth-child(odd),
-    html body .tb--fp-container .tb--fp-wrapper > *:last-child:nth-child(odd) {
-        grid-column: 1 / -1 !important;
-    }
-
-    body .tb--fp-container .tb--fp-item,
-    body .tb--fp-container .tb--fp-rock-item,
-    body .tb--fp-container .tb--fp-rock__item,
-    body .tb--fp-container [class*="fp-item"],
-    body .tb--fp-container [class*="rock-item"],
-    body .tb--fp-container [class*="rock__item"],
-    body .tb--fp-container .swiper-slide,
-    body .tb--fp-container > a,
-    body .tb--fp-container > div > a {
-        min-width: 0 !important;
-        width: 100% !important;
-        height: 54px !important;
-        padding: 4px 8px !important;
-        gap: 8px !important;
-        box-sizing: border-box !important;
-    }
-
-    body .tb--fp-container .tb--fp-item::before,
-    body .tb--fp-container .tb--fp-rock-item::before,
-    body .tb--fp-container .tb--fp-rock__item::before,
-    body .tb--fp-container [class*="fp-item"]::before,
-    body .tb--fp-container [class*="rock-item"]::before,
-    body .tb--fp-container [class*="rock__item"]::before,
-    body .tb--fp-container > a::before,
-    body .tb--fp-container > div > a::before {
-        top: 3px !important;
-        right: 3px !important;
-        bottom: 3px !important;
-        left: 3px !important;
-        height: auto !important;
-    }
-
-    body .tb--fp-container .tb--fp-title,
-    body .tb--fp-container .tb--fp-text,
-    body .tb--fp-container .tb--fp-name,
-    body .tb--fp-container [class*="fp-title"]:not([class*="sub"]),
-    body .tb--fp-container [class*="fp-text"]:not([class*="sub"]),
-    body .tb--fp-container [class*="fp-name"]:not([class*="sub"]),
-    body .tb--fp-container [class*="rock-title"]:not([class*="sub"]),
-    body .tb--fp-container [class*="rock-text"]:not([class*="sub"]),
-    body .tb--fp-container [class*="rock-name"]:not([class*="sub"]),
-    body .tb--fp-container [class*="title"]:not([class*="sub"]),
-    body .tb--fp-container [class*="text"]:not([class*="sub"]),
-    body .tb--fp-container [class*="name"]:not([class*="sub"]),
-    body .tb--fp-container .tb--menu-item_text,
-    body .tb--fp-container a > span:first-of-type,
-    body .tb--fp-container [class*="item"] > span:first-of-type {
-        height: 46px !important;
-        font-size: 11.5px !important;
-        line-height: 15px !important;
-        padding: 0 32px 0 4px !important;
-        white-space: nowrap !important;
-        overflow: hidden !important;
-        text-overflow: ellipsis !important;
-    }
-
-    body .tb--fp-container .tb--fp-title::after,
-    body .tb--fp-container [class*="fp-title"]:not([class*="sub"])::after,
-    body .tb--fp-container [class*="rock-title"]:not([class*="sub"])::after,
-    body .tb--fp-container [class*="title"]:not([class*="sub"])::after,
-    body .tb--fp-container .tb--menu-item_text::after,
-    body .tb--fp-container .tb--fp-subtitle,
-    body .tb--fp-container [class*="sub"] {
-        font-size: 10px !important;
-        line-height: 13px !important;
-    }
-
-    html body .tb--fp-container .tb--fp-rock__icon,
-    html body .tb--fp-rock__icon {
-        left: auto !important;
-        right: 6px !important;
-        bottom: 2px !important;
-        font-size: 20px !important;
-        max-width: 32px !important;
-        max-height: 32px !important;
-    }
-
     /* Mobilde Footer -> 2 Sutunlu Temiz Grid */
     html body .footer-menu-block,
     body .footer-container .footer-menu-block {
