@@ -1030,3 +1030,309 @@ body [class*="to-top"] {
         border: 0 !important;
     }
 }
+
+/* ==========================================================================
+   GUNUN MACLARI / TOP MATCHES SPORT WIDGET - LIGHT TURQUOISE THEME
+   ========================================================================== */
+
+:root,
+html,
+body,
+body sport-top-matches,
+body .top-matches-sport-widget,
+body .tb--top-matches-sport-widget,
+body .top-matches2_placeholder,
+body .dgw_event_widget_wrapper,
+body .dg_widget_root,
+body .dg_widget_wrapper {
+    --accentBg: #26c2b5 !important;
+    --accentBg2: #1fa99f !important;
+    --accentBg3: #1a948b !important;
+    --accentTxt: #ffffff !important;
+    --primary: #26c2b5 !important;
+    --secondary: #1fa99f !important;
+    --green: #1fa99f !important;
+    --win: #1fa99f !important;
+    --highlight: #26c2b5 !important;
+    --feature: #26c2b5 !important;
+    --active: #26c2b5 !important;
+    --eventBg: #ffffff !important;
+    --eventBg2: #f3f5f6 !important;
+    --eventBg3: #e8ecef !important;
+    --eventTxt: #1e2530 !important;
+    --eventTxt2: #5c6b7d !important;
+    --eventTxt3: #7e8da0 !important;
+    --eventBorder: #d8dfe6 !important;
+    --main: #ffffff !important;
+    --back: #f3f5f6 !important;
+    --text: #1e2530 !important;
+    --teams: #1e2530 !important;
+    --scores: #1fa99f !important;
+    --default: #6c7a8c !important;
+    --inactive: #ffffff !important;
+    --bet: #f3f5f6 !important;
+    --bet--active: #26c2b5 !important;
+    --single: #f3f5f6 !important;
+    --oddBg: #f3f5f6 !important;
+    --oddBg2: #e9eef2 !important;
+    --oddTxt: #1e2530 !important;
+    --oddTxt2: #1fa99f !important;
+    --oddActiveBg: #26c2b5 !important;
+    --oddActiveTxt: #ffffff !important;
+}
+
+/* Ana Widget Kapsayici */
+body sport-top-matches,
+body .top-matches-sport-widget,
+body .tb--top-matches-sport-widget,
+body .top-matches2_placeholder,
+body .dgw_event_widget_wrapper,
+body .dg_widget_wrapper,
+body .ai_widget_wrapper {
+    display: block !important;
+    width: 100% !important;
+    max-width: 1428px !important;
+    margin: 18px auto !important;
+    padding: 14px 16px !important;
+    background: #f3f5f6 !important;
+    border: 1px solid #d5dce4 !important;
+    border-radius: 14px !important;
+    box-shadow: 0 4px 14px rgba(20, 30, 45, 0.05), inset 0 1px 0 #ffffff !important;
+    box-sizing: border-box !important;
+}
+
+/* Ic kapsayicilarin cift cerceve yapmasini engelle */
+body .tb--top-matches-sport-widget .dgw_event_widget_wrapper,
+body .top-matches-sport-widget .dgw_event_widget_wrapper,
+body sport-top-matches .dgw_event_widget_wrapper,
+body .dgw_event_widget_wrapper .dg_widget_wrapper {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+/* Ust Bar: Spor Bransi Sekmeleri ve Sag/Sol Oklar */
+body .dgw_event_widget_wrapper_header,
+body .dg_events_widget_header,
+body .ai_widget_header_holder,
+body .tb--top-matches-sport-widget [class*="header"],
+body .top-matches-sport-widget [class*="header"] {
+    background: transparent !important;
+    margin-bottom: 12px !important;
+}
+
+/* Pasif Spor Bransi Daire Butonlari */
+body .dgw_event_widget_tab_item,
+body .tb--top-matches-sport-widget [class*="tab_item"],
+body .tb--top-matches-sport-widget [class*="tab-item"],
+body .top-matches-sport-widget [class*="tab_item"],
+body .top-matches-sport-widget [class*="tab-item"] {
+    background: #ffffff !important;
+    color: #2d343e !important;
+    border: 1px solid #d5dce4 !important;
+    box-shadow: 0 2px 6px rgba(20, 30, 45, 0.06) !important;
+    transition: all 0.2s ease !important;
+}
+
+body .dgw_event_widget_tab_item:hover,
+body .tb--top-matches-sport-widget [class*="tab_item"]:hover,
+body .tb--top-matches-sport-widget [class*="tab-item"]:hover {
+    border-color: #26c2b5 !important;
+    color: #1fa99f !important;
+    transform: translateY(-1px) !important;
+}
+
+/* Aktif Spor Bransi Hap Butonu (Futbol vb.) */
+body .dgw_event_widget_tab_item_active,
+body .dgw_event_widget_tab_item.active,
+body .tb--top-matches-sport-widget [class*="tab_item"][class*="active"],
+body .tb--top-matches-sport-widget [class*="tab-item"][class*="active"],
+body .top-matches-sport-widget [class*="tab_item"][class*="active"],
+body .top-matches-sport-widget [class*="tab-item"][class*="active"] {
+    background: linear-gradient(180deg, #26c2b5 0%, #1fa99f 100%) !important;
+    color: #ffffff !important;
+    border: 1px solid #1fa99f !important;
+    box-shadow: 0 4px 12px rgba(38, 194, 181, 0.3) !important;
+    font-weight: 700 !important;
+}
+
+body .dgw_event_widget_tab_item_active *,
+body .dgw_event_widget_tab_item.active * {
+    color: #ffffff !important;
+}
+
+/* Slider Sag / Sol Gezinme Oklari */
+body .dgw_event_widget_wrapper_controls_btn,
+body .tb--top-matches-sport-widget [class*="controls_btn"],
+body .top-matches-sport-widget [class*="controls_btn"] {
+    background: #ffffff !important;
+    color: #2d343e !important;
+    border: 1px solid #d5dce4 !important;
+    box-shadow: 0 2px 6px rgba(20, 30, 45, 0.06) !important;
+    transition: all 0.2s ease !important;
+}
+
+body .dgw_event_widget_wrapper_controls_btn:hover,
+body .tb--top-matches-sport-widget [class*="controls_btn"]:hover,
+body .top-matches-sport-widget [class*="controls_btn"]:hover {
+    background: linear-gradient(180deg, #26c2b5 0%, #1fa99f 100%) !important;
+    color: #ffffff !important;
+    border-color: #1fa99f !important;
+}
+
+/* Mac Kartlari (Koyu yesil/siyah yerine ferah beyaz/turkuaz kartlar) */
+body .dgw_top_matches_card,
+body .dgw_event_card,
+body .dg_widget_slide,
+body .ai_widget_slide,
+body .sp-banner__card,
+body .tb--top-matches-sport-widget .dgw_event_card_body,
+body .top-matches-sport-widget .dgw_event_card_body {
+    background: #ffffff !important;
+    background-image: linear-gradient(180deg, rgba(38, 194, 181, 0.08) 0%, rgba(255, 255, 255, 0) 65%) !important;
+    border: 1px solid #d8dfe6 !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 12px rgba(20, 30, 45, 0.06) !important;
+    color: #1e2530 !important;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+body .dgw_top_matches_card:hover,
+body .dgw_event_card:hover,
+body .sp-banner__card:hover {
+    border-color: #26c2b5 !important;
+    box-shadow: 0 6px 16px rgba(38, 194, 181, 0.14) !important;
+}
+
+/* Kart icindeki ust SVG parlama gradyanini turkuaza cevir */
+body .dgw_top_matches_card svg stop,
+body .dgw_event_card svg stop,
+body sport-top-matches svg stop,
+body .tb--top-matches-sport-widget svg stop,
+body .top-matches-sport-widget svg stop {
+    stop-color: #26c2b5 !important;
+}
+
+/* Lig Basligi, Market Basligi (Mac Sonucu) ve +Market Sayisi */
+body .dgw_event_card_header,
+body .dgw_event_card_header_name,
+body .dgw_event_card_prematch_info,
+body .dgw_event_card_events_info,
+body .dgw_event_card_events_start_date,
+body .dgw_event_card_events_start_time,
+body .dgw_event_markets_count,
+body .dgw_event_markets_count_sign,
+body .dg_widget_odds_show_more {
+    color: #6c7a8c !important;
+    font-weight: 600 !important;
+}
+
+/* Canli Mac Gostergesi (Ilk Yari / Ikinci Yari) */
+body .dgw_event_card_events_live,
+body .dgw_event_status,
+body .dgw_event_card_event_status,
+body .dgw_event_card_events_time {
+    color: #e8394d !important;
+    font-weight: 700 !important;
+}
+
+/* Takim Isimleri */
+body .dgw_event_card_team_name,
+body .dgw_event_card_team,
+body .dgw_event_card_events_team,
+body .tb--top-matches-sport-widget .match-teams,
+body .sp-banner__card__teams {
+    color: #1e2530 !important;
+    font-weight: 700 !important;
+}
+
+/* Mac Skorlari */
+body .dgw_event_card_score,
+body .dgw_event_card_score_active,
+body .dgw_event_card_teams_score,
+body .dgw_event_card_teams_score_accented,
+body .dgw_event_card_events_score {
+    color: #1fa99f !important;
+    font-weight: 800 !important;
+}
+
+/* Oran Kutulari (1 / X / 2) */
+body .dgw_event_card_odds,
+body .dgw_event_card_odds_items,
+body .dgw_event_card_odds_items_wrapper {
+    background: transparent !important;
+    gap: 6px !important;
+}
+
+body .dgw_event_card_odd,
+body .dgw_event_card_stakes_odd,
+body .tb--top-matches-sport-widget .odds-item,
+body .tb--top-matches-sport-widget .top-matches2-odd,
+body .sp-event-block-item {
+    background: #f3f5f6 !important;
+    border: 1px solid #dce2e8 !important;
+    border-radius: 8px !important;
+    color: #1e2530 !important;
+    box-shadow: inset 0 1px 0 #ffffff !important;
+    transition: all 0.18s ease !important;
+}
+
+/* Oran Etiketi (Sol: 1, X, 2) */
+body .dgw_event_card_odd > *:first-child,
+body .dgw_event_card_stakes_odd > *:first-child,
+body .sp-event-block-item__name-text {
+    color: #6c7a8c !important;
+    font-weight: 600 !important;
+}
+
+/* Oran Degeri (Sag: 2.36, 2.73, 4.21) */
+body .dgw_event_card_odd > *:last-child,
+body .dgw_event_card_stakes_odd > *:last-child,
+body .tb--top-matches-sport-widget .top-matches2-odd-price,
+body .dg_widget_multiBet_details_item_factor,
+body .dg_widget_multiBet_details_item_odd_factor,
+body .sp-event-block-item__price {
+    color: #1fa99f !important;
+    font-weight: 800 !important;
+}
+
+/* Oran Kutusu Hover ve Secili (Active) Durumu */
+body .dgw_event_card_odd:hover,
+body .dgw_event_card_odd_active,
+body .dgw_event_card_odd.active,
+body .dgw_event_card_stakes_odd:hover,
+body .tb--top-matches-sport-widget .odds-item:hover,
+body .tb--top-matches-sport-widget .odds-item.active,
+body .sp-event-block-item:hover,
+body .sp-event-block-item.active {
+    background: linear-gradient(180deg, #26c2b5 0%, #1fa99f 100%) !important;
+    border-color: #1fa99f !important;
+    color: #ffffff !important;
+    box-shadow: 0 3px 8px rgba(38, 194, 181, 0.25) !important;
+}
+
+body .dgw_event_card_odd:hover *,
+body .dgw_event_card_odd_active *,
+body .dgw_event_card_odd.active *,
+body .dgw_event_card_stakes_odd:hover *,
+body .tb--top-matches-sport-widget .odds-item:hover *,
+body .tb--top-matches-sport-widget .odds-item.active *,
+body .sp-event-block-item:hover *,
+body .sp-event-block-item.active * {
+    color: #ffffff !important;
+}
+
+@media (max-width: 991px) {
+    body sport-top-matches,
+    body .top-matches-sport-widget,
+    body .tb--top-matches-sport-widget,
+    body .top-matches2_placeholder,
+    body .dgw_event_widget_wrapper {
+        margin: 12px 10px !important;
+        padding: 12px !important;
+        width: calc(100% - 20px) !important;
+        border-radius: 12px !important;
+    }
+}
