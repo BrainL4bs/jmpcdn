@@ -437,12 +437,12 @@ body .tb--fp-container > div > *:nth-child(5) > a::before {
 }
 
 /* Kart icindeki tum elemanlarin ve yazilarin z-index'ini 0 yap (altta kalmasini onler) */
-body .tb--fp-container .tb--fp-item *,
-body .tb--fp-container .tb--fp-rock-item *,
-body .tb--fp-container [class*="fp-item"] *,
-body .tb--fp-container [class*="rock-item"] *,
-body .tb--fp-container > a *,
-body .tb--fp-container > div > a * {
+body .tb--fp-container .tb--fp-item *:not(.tb--fp-rock__icon),
+body .tb--fp-container .tb--fp-rock-item *:not(.tb--fp-rock__icon),
+body .tb--fp-container [class*="fp-item"] *:not(.tb--fp-rock__icon),
+body .tb--fp-container [class*="rock-item"] *:not(.tb--fp-rock__icon),
+body .tb--fp-container > a *:not(.tb--fp-rock__icon),
+body .tb--fp-container > div > a *:not(.tb--fp-rock__icon) {
     position: relative !important;
     z-index: 0 !important;
 }
@@ -454,9 +454,9 @@ body .tb--fp-container [class*="fp-icon"],
 body .tb--fp-container [class*="fp-img"],
 body .tb--fp-container [class*="rock-icon"],
 body .tb--fp-container [class*="rock-img"],
-body .tb--fp-container [class*="item"] img,
-body .tb--fp-container [class*="item"] i,
-body .tb--fp-container [class*="item"] svg {
+body .tb--fp-container [class*="item"] img:not(.tb--fp-rock__icon),
+body .tb--fp-container [class*="item"] i:not(.tb--fp-rock__icon),
+body .tb--fp-container [class*="item"] svg:not(.tb--fp-rock__icon) {
     position: relative !important;
     z-index: 0 !important;
     min-width: 40px !important;
@@ -472,6 +472,17 @@ body .tb--fp-container [class*="item"] svg {
     font-size: 28px !important;
     color: #26c2b5 !important;
     background: transparent !important;
+}
+
+/* Rock Sablonu Sag Alt Ikonu (.tb--fp-rock__icon) */
+body .tb--fp-container .tb--fp-rock__icon,
+.tb--fp-rock__icon {
+    bottom: 0px !important;
+    color: var(--brand-color-2) !important;
+    opacity: 1 !important;
+    position: absolute !important;
+    right: 8px !important;
+    transition: all .3s !important;
 }
 
 /* Sag Metin Kutusu & Baslik */
