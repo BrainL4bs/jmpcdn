@@ -358,10 +358,14 @@ body .tb--fp-container::-webkit-scrollbar {
 }
 
 /* Eger iceride slider/track sarmalayicisi varsa yan yana esnek diz ve arka planini seffaf yap */
-body .tb--fp-container > div:not([class*="item"]):not([class*="rock"]),
+body .tb--fp-container > div:not([class*="item"]),
 body .tb--fp-container .tb--fp-wrapper,
 body .tb--fp-container .tb--fp-list,
 body .tb--fp-container .tb--fp-slider,
+body .tb--fp-container [class*="rock-wrapper"],
+body .tb--fp-container [class*="rock__wrapper"],
+body .tb--fp-container [class*="rock-list"],
+body .tb--fp-container [class*="rock-slider"],
 body .tb--fp-container .swiper-container,
 body .tb--fp-container .swiper-wrapper,
 body .tb--fp-container .slick-list,
@@ -392,8 +396,10 @@ body .tb--fp-container [class*="fp-bg"] {
 /* Her bir kategori karti */
 body .tb--fp-container .tb--fp-item,
 body .tb--fp-container .tb--fp-rock-item,
+body .tb--fp-container .tb--fp-rock__item,
 body .tb--fp-container [class*="fp-item"],
 body .tb--fp-container [class*="rock-item"],
+body .tb--fp-container [class*="rock__item"],
 body .tb--fp-container .swiper-slide,
 body .tb--fp-container > a,
 body .tb--fp-container > div > a {
@@ -421,8 +427,10 @@ body .tb--fp-container > div > a {
 
 body .tb--fp-container .tb--fp-item:hover,
 body .tb--fp-container .tb--fp-rock-item:hover,
+body .tb--fp-container .tb--fp-rock__item:hover,
 body .tb--fp-container [class*="fp-item"]:hover,
 body .tb--fp-container [class*="rock-item"]:hover,
+body .tb--fp-container [class*="rock__item"]:hover,
 body .tb--fp-container .swiper-slide:hover,
 body .tb--fp-container > a:hover,
 body .tb--fp-container > div > a:hover {
@@ -432,8 +440,10 @@ body .tb--fp-container > div > a:hover {
 /* Sag taraf renkli gradient cercevesi (z-index: -1 ile yazilarin altinda kalir, ikonu kesmez) */
 body .tb--fp-container .tb--fp-item::before,
 body .tb--fp-container .tb--fp-rock-item::before,
+body .tb--fp-container .tb--fp-rock__item::before,
 body .tb--fp-container [class*="fp-item"]::before,
 body .tb--fp-container [class*="rock-item"]::before,
+body .tb--fp-container [class*="rock__item"]::before,
 body .tb--fp-container > a::before,
 body .tb--fp-container > div > a::before {
     content: "" !important;
@@ -1133,6 +1143,9 @@ body [class*="to-top"] {
     html body .header-block .menu-block_holder,
     html body .header-block .main-menu-block,
     html body .header-block .main--menu-cont,
+    html body .header-block_holder .menu-block_holder,
+    html body .header-block_holder .main-menu-block,
+    html body .header-block_holder .main--menu-cont,
     html body .header-block [class*="menu-block"],
     html body .header-block [class*="main-menu"],
     html body .menu-block_holder,
@@ -1147,8 +1160,8 @@ body [class*="to-top"] {
     }
 
     html body .header-block_sub *:not(.active):not(.selected):not(.tb--badge),
-    html body .menu-block_holder *:not(.active):not(.selected):not(.tb--badge),
-    html body .main-menu-block *:not(.active):not(.selected):not(.tb--badge) {
+    html body .menu-block_holder *:not(.active):not(.selected):not(.tb--badge):not(.main-menu-block):not(.main--menu-cont),
+    html body .main-menu-block *:not(.active):not(.selected):not(.tb--badge):not(.main--menu-cont) {
         background-color: transparent !important;
         border-radius: 0 !important;
     }
@@ -1223,10 +1236,14 @@ body [class*="to-top"] {
         box-shadow: none !important;
     }
 
-    html body .tb--fp-container > div:not([class*="item"]):not([class*="rock"]),
+    html body .tb--fp-container > div:not([class*="item"]),
     html body .tb--fp-container .tb--fp-wrapper,
     html body .tb--fp-container .tb--fp-list,
     html body .tb--fp-container .tb--fp-slider,
+    html body .tb--fp-container [class*="rock-wrapper"],
+    html body .tb--fp-container [class*="rock__wrapper"],
+    html body .tb--fp-container [class*="rock-list"],
+    html body .tb--fp-container [class*="rock-slider"],
     html body .tb--fp-container .swiper-container,
     html body .tb--fp-container .swiper-wrapper,
     html body .tb--fp-container .slick-list,
@@ -1257,8 +1274,10 @@ body [class*="to-top"] {
 
     body .tb--fp-container .tb--fp-item,
     body .tb--fp-container .tb--fp-rock-item,
+    body .tb--fp-container .tb--fp-rock__item,
     body .tb--fp-container [class*="fp-item"],
     body .tb--fp-container [class*="rock-item"],
+    body .tb--fp-container [class*="rock__item"],
     body .tb--fp-container .swiper-slide,
     body .tb--fp-container > a,
     body .tb--fp-container > div > a {
@@ -1272,8 +1291,10 @@ body [class*="to-top"] {
 
     body .tb--fp-container .tb--fp-item::before,
     body .tb--fp-container .tb--fp-rock-item::before,
+    body .tb--fp-container .tb--fp-rock__item::before,
     body .tb--fp-container [class*="fp-item"]::before,
     body .tb--fp-container [class*="rock-item"]::before,
+    body .tb--fp-container [class*="rock__item"]::before,
     body .tb--fp-container > a::before,
     body .tb--fp-container > div > a::before {
         top: 3px !important;
