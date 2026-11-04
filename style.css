@@ -505,18 +505,19 @@ body .tb--fp-container [class*="item"] > span:first-of-type {
     z-index: 0 !important;
     display: flex !important;
     flex-direction: column !important;
-    align-items: flex-start !important;
+    align-items: center !important;
     justify-content: center !important;
     width: 100% !important;
     height: 56px !important;
     margin: 0 !important;
-    padding: 0 8px 0 0 !important;
+    padding: 0 56px !important;
+    box-sizing: border-box !important;
     background: transparent !important;
     color: #23282f !important;
     font-weight: 600 !important;
     font-size: 14px !important;
     line-height: 20px !important;
-    text-align: left !important;
+    text-align: center !important;
     white-space: nowrap !important;
 }
 
@@ -532,7 +533,7 @@ body .tb--fp-container [class*="sub"] {
     font-weight: 600 !important;
     font-size: 12px !important;
     line-height: 16px !important;
-    text-align: left !important;
+    text-align: center !important;
 }
 
 /* Eger Jumpobet DOM'unda alt baslik etiketi yoksa ::after ile otomatik olustur */
