@@ -199,6 +199,7 @@ body .header-language * {
    -------------------------------------------------------------------------- */
 body .header-block_sub {
     background: #272d36 !important;
+    background-color: #272d36 !important;
     padding-left: max(16px, calc((100% - 1428px) / 2)) !important;
     padding-right: max(16px, calc((100% - 1428px) / 2)) !important;
     min-height: 72px !important;
@@ -206,6 +207,11 @@ body .header-block_sub {
     border-bottom: 0 !important;
     display: flex !important;
     align-items: center !important;
+}
+
+body .header-block_sub *:not(.submenu-txt):not(.tb--badge) {
+    background: transparent !important;
+    background-color: transparent !important;
 }
 
 /* Alt Menu Ogeleri -> UST MENU GIBI: IKON USTTE, YAZI ALTTA, 72PX BLOK */
@@ -344,13 +350,21 @@ body .tb--fp-container [class*="fp-bg"] {
     display: none !important;
 }
 
+/* Turkuaz arka plani kaldir (display/grid yapisina dokunmadan sadece arka plan seffaf) */
+body .tb--fp-container > div,
+body .tb--fp-container [class*="rock__items"] {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
 /* Her bir kategori karti */
 body .tb--fp-container .tb--fp-item,
 body .tb--fp-container .tb--fp-rock-item,
-body .tb--fp-container .tb--fp-rock__item,
 body .tb--fp-container [class*="fp-item"],
 body .tb--fp-container [class*="rock-item"],
-body .tb--fp-container [class*="rock__item"],
 body .tb--fp-container .swiper-slide,
 body .tb--fp-container > a,
 body .tb--fp-container > div > a {
@@ -378,10 +392,8 @@ body .tb--fp-container > div > a {
 
 body .tb--fp-container .tb--fp-item:hover,
 body .tb--fp-container .tb--fp-rock-item:hover,
-body .tb--fp-container .tb--fp-rock__item:hover,
 body .tb--fp-container [class*="fp-item"]:hover,
 body .tb--fp-container [class*="rock-item"]:hover,
-body .tb--fp-container [class*="rock__item"]:hover,
 body .tb--fp-container .swiper-slide:hover,
 body .tb--fp-container > a:hover,
 body .tb--fp-container > div > a:hover {
@@ -391,10 +403,8 @@ body .tb--fp-container > div > a:hover {
 /* Sag taraf renkli gradient cercevesi (z-index: -1 ile yazilarin altinda kalir, ikonu kesmez) */
 body .tb--fp-container .tb--fp-item::before,
 body .tb--fp-container .tb--fp-rock-item::before,
-body .tb--fp-container .tb--fp-rock__item::before,
 body .tb--fp-container [class*="fp-item"]::before,
 body .tb--fp-container [class*="rock-item"]::before,
-body .tb--fp-container [class*="rock__item"]::before,
 body .tb--fp-container > a::before,
 body .tb--fp-container > div > a::before {
     content: "" !important;
@@ -915,48 +925,47 @@ body [class*="to-top"] {
 }
 
 /* --------------------------------------------------------------------------
-   10. MOBIL UYUMLULUK
+   10. MOBIL
    -------------------------------------------------------------------------- */
 @media (max-width: 1024px) {
     body .header-block_holder {
-        min-height: 52px !important;
-        height: 52px !important;
+        min-height: 50px !important;
+        height: 50px !important;
         padding-left: 12px !important;
         padding-right: 12px !important;
     }
 
-    body .header-block_holder .main--menu-item-cont,
     body .header-block_holder .menu--block-item {
-        height: 52px !important;
+        height: 50px !important;
         padding: 0 10px !important;
+        font-size: 12px !important;
     }
 
     body .header-block_sub {
-        min-height: 60px !important;
-        height: 60px !important;
-        padding-left: 12px !important;
-        padding-right: 12px !important;
+        min-height: 56px !important;
+        height: 56px !important;
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+        overflow-x: auto !important;
     }
 
     body .header-block_sub .submenu-txt {
-        height: 60px !important;
-        padding: 0 12px !important;
-        font-size: 12px !important;
+        height: 56px !important;
+        padding: 0 14px !important;
+        font-size: 11px !important;
+        white-space: nowrap !important;
     }
 
     body .header-block .tb--access-btn {
         height: 36px !important;
-        padding: 0 12px !important;
-        font-size: 12px !important;
+        min-width: 0 !important;
+        padding: 0 14px !important;
+        font-size: 13px !important;
     }
-}
 
-@media (max-width: 768px) {
-    /* Mobilde Footer -> 2 Sutunlu Temiz Grid */
     html body .footer-menu-block,
     body .footer-container .footer-menu-block {
-        display: grid !important;
-        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        flex-wrap: wrap !important;
         gap: 24px 16px !important;
         padding: 16px 12px !important;
     }
@@ -965,5 +974,12 @@ body [class*="to-top"] {
     body .footer-container .footer-menu-block_col {
         min-width: 0 !important;
         width: 100% !important;
+        flex: 1 1 calc(50% - 16px) !important;
+    }
+
+    html body .footer-submenu,
+    body .footer-container .footer-submenu {
+        background: transparent !important;
+        border: 0 !important;
     }
 }
