@@ -957,6 +957,12 @@ body [class*="to-top"] {
         display: none !important;
     }
 
+    body .header-block_sub .prom-block_item,
+    body .header-block_sub .submenu-txt {
+        flex-shrink: 0 !important;
+        min-width: max-content !important;
+    }
+
     body .header-block_sub .submenu-txt {
         height: 52px !important;
         padding: 0 14px !important;
