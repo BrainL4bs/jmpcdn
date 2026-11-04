@@ -510,8 +510,7 @@ body .tb--fp-container [class*="item"] > span:first-of-type {
     width: 100% !important;
     height: 56px !important;
     margin: 0 !important;
-    padding: 0 56px !important;
-    box-sizing: border-box !important;
+    padding: 0 8px 0 0 !important;
     background: transparent !important;
     color: #23282f !important;
     font-weight: 600 !important;
@@ -519,6 +518,17 @@ body .tb--fp-container [class*="item"] > span:first-of-type {
     line-height: 20px !important;
     text-align: center !important;
     white-space: nowrap !important;
+}
+
+/* Metinleri yatayda ortala: ikon disindaki tum sarmalayicilar tam genislik + ortali */
+body .tb--fp-container [class*="rock-item"] > *:not(.tb--fp-rock__icon):not(img):not(svg):not(i),
+body .tb--fp-container [class*="fp-item"] > *:not(.tb--fp-rock__icon):not(img):not(svg):not(i),
+body .tb--fp-container > a > *:not(.tb--fp-rock__icon):not(img):not(svg):not(i),
+body .tb--fp-container > div > a > *:not(.tb--fp-rock__icon):not(img):not(svg):not(i) {
+    flex: 1 1 auto !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
 }
 
 /* Alt Baslik (Subtitle) */
