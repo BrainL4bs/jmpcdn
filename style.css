@@ -946,31 +946,19 @@ body [class*="to-top"] {
     body .header-block_sub {
         min-height: 56px !important;
         height: 56px !important;
-        max-height: 56px !important;
         padding-left: 8px !important;
         padding-right: 8px !important;
         overflow-x: auto !important;
         overflow-y: hidden !important;
         scrollbar-width: none !important;
-        -ms-overflow-style: none !important;
     }
 
-    body .header-block_sub * {
-        overflow-y: hidden !important;
-        scrollbar-width: none !important;
-        -ms-overflow-style: none !important;
-    }
-
-    body .header-block_sub::-webkit-scrollbar,
-    body .header-block_sub *::-webkit-scrollbar {
+    body .header-block_sub::-webkit-scrollbar {
         display: none !important;
-        width: 0 !important;
-        height: 0 !important;
     }
 
     body .header-block_sub .submenu-txt {
-        height: 56px !important;
-        max-height: 56px !important;
+        height: 52px !important;
         padding: 0 14px !important;
         font-size: 11px !important;
         white-space: nowrap !important;
