@@ -537,6 +537,7 @@ body .tb--fp-container [class*="item"] > span:first-of-type {
     line-height: 20px !important;
     text-align: center !important;
     white-space: nowrap !important;
+    overflow: visible !important;
 }
 
 /* Metinleri yatayda ortala: ikon disindaki tum sarmalayicilar tam genislik + ortali */
@@ -548,6 +549,7 @@ body .tb--fp-container > div > a > *:not(.tb--fp-rock__icon):not(img):not(svg):n
     justify-content: center !important;
     align-items: center !important;
     text-align: center !important;
+    overflow: visible !important;
 }
 
 /* Alt Baslik (Subtitle) */
@@ -944,16 +946,67 @@ body [class*="to-top"] {
     body .header-block_sub {
         min-height: 56px !important;
         height: 56px !important;
+        max-height: 56px !important;
         padding-left: 8px !important;
         padding-right: 8px !important;
         overflow-x: auto !important;
+        overflow-y: hidden !important;
+        scrollbar-width: none !important;
+        -ms-overflow-style: none !important;
+    }
+
+    body .header-block_sub * {
+        overflow-y: hidden !important;
+        scrollbar-width: none !important;
+        -ms-overflow-style: none !important;
+    }
+
+    body .header-block_sub::-webkit-scrollbar,
+    body .header-block_sub *::-webkit-scrollbar {
+        display: none !important;
+        width: 0 !important;
+        height: 0 !important;
     }
 
     body .header-block_sub .submenu-txt {
         height: 56px !important;
+        max-height: 56px !important;
         padding: 0 14px !important;
         font-size: 11px !important;
         white-space: nowrap !important;
+    }
+
+    /* Mobilde kategori kutularinda yazilarin kesilmemesi icin genislik ve bosluk ayari */
+    body .tb--fp-container .tb--fp-item,
+    body .tb--fp-container .tb--fp-rock-item,
+    body .tb--fp-container [class*="fp-item"],
+    body .tb--fp-container [class*="rock-item"],
+    body .tb--fp-container .swiper-slide,
+    body .tb--fp-container > a,
+    body .tb--fp-container > div > a {
+        min-width: 190px !important;
+        gap: 8px !important;
+        padding: 4px 10px !important;
+    }
+
+    body .tb--fp-container .tb--fp-title,
+    body .tb--fp-container .tb--fp-text,
+    body .tb--fp-container .tb--fp-name,
+    body .tb--fp-container [class*="fp-title"]:not([class*="sub"]),
+    body .tb--fp-container [class*="fp-text"]:not([class*="sub"]),
+    body .tb--fp-container [class*="fp-name"]:not([class*="sub"]),
+    body .tb--fp-container [class*="rock-title"]:not([class*="sub"]),
+    body .tb--fp-container [class*="rock-text"]:not([class*="sub"]),
+    body .tb--fp-container [class*="rock-name"]:not([class*="sub"]),
+    body .tb--fp-container [class*="title"]:not([class*="sub"]),
+    body .tb--fp-container [class*="text"]:not([class*="sub"]),
+    body .tb--fp-container [class*="name"]:not([class*="sub"]),
+    body .tb--fp-container .tb--menu-item_text,
+    body .tb--fp-container a > span:first-of-type,
+    body .tb--fp-container [class*="item"] > span:first-of-type {
+        font-size: 12.5px !important;
+        padding: 0 !important;
+        overflow: visible !important;
     }
 
     body .header-block .tb--access-btn {
