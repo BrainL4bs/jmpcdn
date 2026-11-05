@@ -215,12 +215,17 @@ body .header-block_sub *:not(.submenu-txt):not(.tb--badge) {
 }
 
 /* Alt Menu Ogeleri -> UST MENU GIBI: IKON USTTE, YAZI ALTTA, 72PX BLOK */
+body .header-block_sub .prom-block_item {
+    flex: 0 0 auto !important;
+}
+
 body .header-block_sub .submenu-txt {
     flex-direction: column !important;
     justify-content: center !important;
     align-items: center !important;
     height: 72px !important;
-    padding: 0 20px !important;
+    min-width: 90px !important;
+    padding: 0 16px !important;
     gap: 4px !important;
     color: #ffffff !important;
     font-size: 13px !important;
@@ -944,30 +949,160 @@ body [class*="to-top"] {
     }
 
     body .header-block_sub {
-        min-height: 56px !important;
-        height: 56px !important;
-        padding-left: 8px !important;
-        padding-right: 8px !important;
+        min-height: 58px !important;
+        height: 58px !important;
+        padding-left: 6px !important;
+        padding-right: 6px !important;
         overflow-x: auto !important;
         overflow-y: hidden !important;
         scrollbar-width: none !important;
+        display: flex !important;
+        align-items: center !important;
     }
 
     body .header-block_sub::-webkit-scrollbar {
         display: none !important;
     }
 
-    body .header-block_sub .prom-block_item,
-    body .header-block_sub .submenu-txt {
-        flex-shrink: 0 !important;
-        min-width: max-content !important;
+    body .header-block_sub .prom-block_links {
+        display: flex !important;
+        align-items: center !important;
+        height: 100% !important;
+        gap: 0 !important;
+    }
+
+    body .header-block_sub .prom-block_item {
+        flex: 0 0 auto !important;
+        min-width: 82px !important;
+        height: 100% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 !important;
     }
 
     body .header-block_sub .submenu-txt {
-        height: 52px !important;
-        padding: 0 14px !important;
+        width: 100% !important;
+        min-width: 82px !important;
+        height: 50px !important;
+        padding: 0 6px !important;
+        margin: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        gap: 3px !important;
         font-size: 11px !important;
+        font-weight: 700 !important;
         white-space: nowrap !important;
+        border-right: 1px solid rgba(255, 255, 255, 0.06) !important;
+        border-left: 0 !important;
+        flex-shrink: 0 !important;
+    }
+
+    body .header-block_sub .header-icon {
+        font-size: 18px !important;
+        line-height: 1 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 !important;
+    }
+
+    /* --------------------------------------------------------------------------
+       MOBIL ACILIR MENU (DRAWER) VE WHATSAPP DESTEK KARTI
+       -------------------------------------------------------------------------- */
+    body .header-mobile-menu {
+        background: #e6eaef !important;
+        padding: 16px 14px 40px !important;
+    }
+
+    /* Ustteki WhatsApp / Destek Karti */
+    body .header-mobile-menu > div:first-child,
+    body .header-mobile-menu .tb--wb-banner,
+    body .header-mobile-menu [class*="banner"],
+    body .header-mobile-menu [class*="whatsapp"],
+    body .header-mobile-menu [class*="support"] {
+        background: #ffffff !important;
+        border: 1px solid #d5dce4 !important;
+        border-radius: 14px !important;
+        box-shadow: 0 4px 14px rgba(20, 30, 45, 0.05) !important;
+        padding: 14px 16px !important;
+        margin-bottom: 14px !important;
+        min-height: 64px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+
+    /* WhatsApp Karti Icindeki Tum Metinleri Belirgin ve Okunur Yap */
+    body .header-mobile-menu > div:first-child *,
+    body .header-mobile-menu .tb--wb-banner *,
+    body .header-mobile-menu [class*="banner"] *:not(i):not(svg):not(path),
+    body .header-mobile-menu [class*="whatsapp"] *:not(i):not(svg):not(path),
+    body .header-mobile-menu [class*="support"] *:not(i):not(svg):not(path) {
+        color: #1e2530 !important;
+        -webkit-text-fill-color: #1e2530 !important;
+        font-weight: 700 !important;
+    }
+
+    body .header-mobile-menu .tb--wb-banner__text,
+    body .header-mobile-menu .tb--wb-banner__text-container,
+    body .header-mobile-menu .tb--wb-banner__text *,
+    body .header-mobile-menu .tb--wb-banner__text-container * {
+        color: #1e2530 !important;
+        -webkit-text-fill-color: #1e2530 !important;
+        font-weight: 700 !important;
+        font-size: 14px !important;
+    }
+
+    /* WhatsApp Ikonu */
+    body .header-mobile-menu .tb--wb-banner__icon,
+    body .header-mobile-menu [class*="whatsapp"] i,
+    body .header-mobile-menu [class*="whatsapp"] img {
+        margin-right: 10px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        font-size: 26px !important;
+    }
+
+    /* Acilir Menudeki Linkler Listesi Karti */
+    body .header-mobile-menu .menu-block,
+    body .header-mobile-menu nav {
+        background: #ffffff !important;
+        border: 1px solid #d5dce4 !important;
+        border-radius: 14px !important;
+        box-shadow: 0 4px 14px rgba(20, 30, 45, 0.05) !important;
+        overflow: hidden !important;
+        padding: 4px 0 !important;
+    }
+
+    body .header-mobile-menu .main--menu-item-cont {
+        border-bottom: 1px solid #eef1f4 !important;
+        padding: 0 !important;
+        min-height: 48px !important;
+    }
+
+    body .header-mobile-menu .main--menu-item-cont:last-child {
+        border-bottom: 0 !important;
+    }
+
+    body .header-mobile-menu .menu--block-item {
+        padding: 12px 18px !important;
+        color: #2d343e !important;
+        font-weight: 600 !important;
+        display: flex !important;
+        align-items: center !important;
+        width: 100% !important;
+    }
+
+    body .header-mobile-menu .menu--block-item:hover,
+    body .header-mobile-menu .menu--block-item.active {
+        background: #f4f7f9 !important;
+        color: #1fa99f !important;
     }
 
     /* Mobilde kategori kutularinda yazilarin kesilmemesi icin genislik ve bosluk ayari */
