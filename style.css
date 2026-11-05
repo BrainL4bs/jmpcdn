@@ -1206,7 +1206,7 @@ body [class*="to-top"] {
     html body .footer-menu-block,
     body .footer-container .footer-menu-block {
         flex-wrap: wrap !important;
-        gap: 24px 16px !important;
+        gap: 0px 16px !important;
         padding: 16px 12px !important;
     }
 
@@ -1215,6 +1215,11 @@ body [class*="to-top"] {
         min-width: 0 !important;
         width: 100% !important;
         flex: 1 1 calc(50% - 16px) !important;
+        padding: 0 0 !important;
+    }
+
+    .footer-menu-block .footer-menu-block_col:not(:first-child):before {
+        border-top: 0px solid var(--background-color-3) !important;
     }
 
     html body .footer-submenu,
@@ -1222,6 +1227,20 @@ body [class*="to-top"] {
         background: transparent !important;
         border: 0 !important;
     }
+
+    .account-block_user-cash {
+        color: #22b3a8 !important;
+        font-weight: bold !important;
+    }
+}
+
+.account-block_item-icon {
+    color: rgb(33 176 165) !important;
+}
+
+html body .footer-menu-block_title,
+body .footer-container .footer-menu-block_title {
+    margin-bottom: 0px !important;
 }
 
 
