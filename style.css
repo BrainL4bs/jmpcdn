@@ -1393,7 +1393,7 @@ body .footer-container .footer-menu-block_title {
 .jmp-game-thumb {
     position: relative;
     width: 100%;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 3 / 4;
     background: #141b25;
     overflow: hidden;
     border-radius: 12px;
