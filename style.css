@@ -1259,12 +1259,12 @@ body .footer-container .footer-menu-block_title {
    JUMPOBET GAME SECTIONS (Slot, Canlı Casino, Hızlı & Crash Oyunlar)
    ========================================================================== */
 .jmp-section-container {
-    width: 100%;
-    max-width: 1380px;
-    margin: 0 auto 28px auto;
-    padding: 0 12px;
-    box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 0 24px 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    font-family: inherit;
 }
 
 .jmp-section-header {
@@ -1417,13 +1417,11 @@ body .footer-container .footer-menu-block_title {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(15, 23, 34, 0.78);
+    background: rgba(15, 23, 34, 0.72);
     backdrop-filter: blur(2px);
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 8px;
     opacity: 0;
     transition: opacity 0.22s ease;
 }
@@ -1433,8 +1431,8 @@ body .footer-container .footer-menu-block_title {
 }
 
 .jmp-play-btn {
-    width: 44px;
-    height: 44px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     background: #26c2b5;
     border: none;
@@ -1442,27 +1440,24 @@ body .footer-container .footer-menu-block_title {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 14px rgba(38, 194, 181, 0.6);
+    box-shadow: 0 4px 16px rgba(38, 194, 181, 0.6);
     cursor: pointer;
     transition: transform 0.2s ease, background 0.2s ease;
 }
 
 .jmp-play-btn svg {
-    width: 22px;
-    height: 22px;
+    width: 24px;
+    height: 24px;
     margin-left: 2px;
 }
 
 .jmp-play-btn:hover {
-    transform: scale(1.1);
+    transform: scale(1.12);
     background: #2cd9ca;
 }
 
 .jmp-play-text {
-    color: #ffffff;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
+    display: none !important;
 }
 
 /* GAME INFO */
