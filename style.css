@@ -274,10 +274,26 @@ body .header-block_sub .header-icon {
 }
 
 /* Alt menudeki ikonlara ozel canli renkler */
-body .header-block_sub .prom-block_item:nth-child(1) .header-icon { color: #e8394d !important; } /* Sizi Arayalim - Kirmizi */
-body .header-block_sub .prom-block_item:nth-child(2) .header-icon { color: #f5a623 !important; } /* Sans Carki - Altin */
-body .header-block_sub .prom-block_item:nth-child(3) .header-icon { color: #4aa3ff !important; } /* Promosyonlar - Mavi */
-body .header-block_sub .prom-block_item:nth-child(4) .header-icon { color: #36d399 !important; } /* Promo-kod - Yesil */
+body .header-block_sub .prom-block_item:nth-child(1) .header-icon {
+    color: #e8394d !important;
+}
+
+/* Sizi Arayalim - Kirmizi */
+body .header-block_sub .prom-block_item:nth-child(2) .header-icon {
+    color: #f5a623 !important;
+}
+
+/* Sans Carki - Altin */
+body .header-block_sub .prom-block_item:nth-child(3) .header-icon {
+    color: #4aa3ff !important;
+}
+
+/* Promosyonlar - Mavi */
+body .header-block_sub .prom-block_item:nth-child(4) .header-icon {
+    color: #36d399 !important;
+}
+
+/* Promo-kod - Yesil */
 
 /* Rozetler */
 body .tb--badge {
@@ -289,10 +305,25 @@ body .tb--badge {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25) !important;
 }
 
-body .tb--badge.tb--hot { background: #e8394d !important; color: #ffffff !important; }
-body .tb--badge.tb--new { background: #1fa99f !important; color: #ffffff !important; }
-body .tb--badge.tb--bonus { background: #f5a623 !important; color: #1e2530 !important; }
-body .tb--badge.tb--promo { background: #7c5cff !important; color: #ffffff !important; }
+body .tb--badge.tb--hot {
+    background: #e8394d !important;
+    color: #ffffff !important;
+}
+
+body .tb--badge.tb--new {
+    background: #1fa99f !important;
+    color: #ffffff !important;
+}
+
+body .tb--badge.tb--bonus {
+    background: #f5a623 !important;
+    color: #1e2530 !important;
+}
+
+body .tb--badge.tb--promo {
+    background: #7c5cff !important;
+    color: #ffffff !important;
+}
 
 /* --------------------------------------------------------------------------
    6. BANNER / SLIDER
@@ -374,7 +405,7 @@ body .tb--fp-container [class*="fp-bg"] {
 }
 
 /* Turkuaz arka plani kaldir (display/grid yapisina dokunmadan sadece arka plan seffaf) */
-body .tb--fp-container > div,
+body .tb--fp-container>div,
 body .tb--fp-container [class*="rock__items"] {
     background: transparent !important;
     background-color: transparent !important;
@@ -389,8 +420,8 @@ body .tb--fp-container .tb--fp-rock-item,
 body .tb--fp-container [class*="fp-item"],
 body .tb--fp-container [class*="rock-item"],
 body .tb--fp-container .swiper-slide,
-body .tb--fp-container > a,
-body .tb--fp-container > div > a {
+body .tb--fp-container>a,
+body .tb--fp-container>div>a {
     position: relative !important;
     isolation: isolate !important;
     z-index: 0 !important;
@@ -418,8 +449,8 @@ body .tb--fp-container .tb--fp-rock-item:hover,
 body .tb--fp-container [class*="fp-item"]:hover,
 body .tb--fp-container [class*="rock-item"]:hover,
 body .tb--fp-container .swiper-slide:hover,
-body .tb--fp-container > a:hover,
-body .tb--fp-container > div > a:hover {
+body .tb--fp-container>a:hover,
+body .tb--fp-container>div>a:hover {
     transform: scale(0.95) !important;
 }
 
@@ -428,8 +459,8 @@ body .tb--fp-container .tb--fp-item::before,
 body .tb--fp-container .tb--fp-rock-item::before,
 body .tb--fp-container [class*="fp-item"]::before,
 body .tb--fp-container [class*="rock-item"]::before,
-body .tb--fp-container > a::before,
-body .tb--fp-container > div > a::before {
+body .tb--fp-container>a::before,
+body .tb--fp-container>div>a::before {
     content: "" !important;
     position: absolute !important;
     top: 3px !important;
@@ -448,30 +479,30 @@ body .tb--fp-container > div > a::before {
 }
 
 /* 2. Kart (Canli Casino) -> Green (.border-green_8496e) */
-body .tb--fp-container > *:nth-child(2)::before,
-body .tb--fp-container > div > *:nth-child(2)::before,
-body .tb--fp-container > div > *:nth-child(2) > a::before {
+body .tb--fp-container>*:nth-child(2)::before,
+body .tb--fp-container>div>*:nth-child(2)::before,
+body .tb--fp-container>div>*:nth-child(2)>a::before {
     background: linear-gradient(90deg, #f3f5f6, #f3f5f6), linear-gradient(90deg, transparent, rgba(87, 191, 147, 0.4)) !important;
     background-clip: padding-box, border-box !important;
     background-origin: padding-box, border-box !important;
 }
 
 /* 3. & 4. Kart (Spor & Canli Bahis) -> Red (.border-red_6f6c6) */
-body .tb--fp-container > *:nth-child(3)::before,
-body .tb--fp-container > *:nth-child(4)::before,
-body .tb--fp-container > div > *:nth-child(3)::before,
-body .tb--fp-container > div > *:nth-child(4)::before,
-body .tb--fp-container > div > *:nth-child(3) > a::before,
-body .tb--fp-container > div > *:nth-child(4) > a::before {
+body .tb--fp-container>*:nth-child(3)::before,
+body .tb--fp-container>*:nth-child(4)::before,
+body .tb--fp-container>div>*:nth-child(3)::before,
+body .tb--fp-container>div>*:nth-child(4)::before,
+body .tb--fp-container>div>*:nth-child(3)>a::before,
+body .tb--fp-container>div>*:nth-child(4)>a::before {
     background: linear-gradient(90deg, #f3f5f6, #f3f5f6), linear-gradient(90deg, transparent, rgba(214, 49, 48, 0.2)) !important;
     background-clip: padding-box, border-box !important;
     background-origin: padding-box, border-box !important;
 }
 
 /* 5. Kart (Diger Oyunlar) -> Blue (.border-blue_5d55e) */
-body .tb--fp-container > *:nth-child(5)::before,
-body .tb--fp-container > div > *:nth-child(5)::before,
-body .tb--fp-container > div > *:nth-child(5) > a::before {
+body .tb--fp-container>*:nth-child(5)::before,
+body .tb--fp-container>div>*:nth-child(5)::before,
+body .tb--fp-container>div>*:nth-child(5)>a::before {
     background: linear-gradient(90deg, #f3f5f6, #f3f5f6), linear-gradient(90deg, transparent, rgba(144, 210, 227, 0.5)) !important;
     background-clip: padding-box, border-box !important;
     background-origin: padding-box, border-box !important;
@@ -482,8 +513,8 @@ body .tb--fp-container .tb--fp-item *:not(.tb--fp-rock__icon),
 body .tb--fp-container .tb--fp-rock-item *:not(.tb--fp-rock__icon),
 body .tb--fp-container [class*="fp-item"] *:not(.tb--fp-rock__icon),
 body .tb--fp-container [class*="rock-item"] *:not(.tb--fp-rock__icon),
-body .tb--fp-container > a *:not(.tb--fp-rock__icon),
-body .tb--fp-container > div > a *:not(.tb--fp-rock__icon) {
+body .tb--fp-container>a *:not(.tb--fp-rock__icon),
+body .tb--fp-container>div>a *:not(.tb--fp-rock__icon) {
     position: relative !important;
     z-index: 0 !important;
 }
@@ -541,8 +572,8 @@ body .tb--fp-container [class*="title"]:not([class*="sub"]),
 body .tb--fp-container [class*="text"]:not([class*="sub"]),
 body .tb--fp-container [class*="name"]:not([class*="sub"]),
 body .tb--fp-container .tb--menu-item_text,
-body .tb--fp-container a > span:first-of-type,
-body .tb--fp-container [class*="item"] > span:first-of-type {
+body .tb--fp-container a>span:first-of-type,
+body .tb--fp-container [class*="item"]>span:first-of-type {
     position: relative !important;
     z-index: 0 !important;
     display: flex !important;
@@ -564,10 +595,10 @@ body .tb--fp-container [class*="item"] > span:first-of-type {
 }
 
 /* Metinleri yatayda ortala: ikon disindaki tum sarmalayicilar tam genislik + ortali */
-body .tb--fp-container [class*="rock-item"] > *:not(.tb--fp-rock__icon):not(img):not(svg):not(i),
-body .tb--fp-container [class*="fp-item"] > *:not(.tb--fp-rock__icon):not(img):not(svg):not(i),
-body .tb--fp-container > a > *:not(.tb--fp-rock__icon):not(img):not(svg):not(i),
-body .tb--fp-container > div > a > *:not(.tb--fp-rock__icon):not(img):not(svg):not(i) {
+body .tb--fp-container [class*="rock-item"]>*:not(.tb--fp-rock__icon):not(img):not(svg):not(i),
+body .tb--fp-container [class*="fp-item"]>*:not(.tb--fp-rock__icon):not(img):not(svg):not(i),
+body .tb--fp-container>a>*:not(.tb--fp-rock__icon):not(img):not(svg):not(i),
+body .tb--fp-container>div>a>*:not(.tb--fp-rock__icon):not(img):not(svg):not(i) {
     flex: 1 1 auto !important;
     justify-content: center !important;
     align-items: center !important;
@@ -606,18 +637,18 @@ body .tb--fp-container .tb--menu-item_text::after {
     z-index: 0 !important;
 }
 
-body .tb--fp-container > *:nth-child(3) [class*="title"]:not([class*="sub"])::after,
-body .tb--fp-container > *:nth-child(4) [class*="title"]:not([class*="sub"])::after,
-body .tb--fp-container > div > *:nth-child(3) [class*="title"]:not([class*="sub"])::after,
-body .tb--fp-container > div > *:nth-child(4) [class*="title"]:not([class*="sub"])::after,
-body .tb--fp-container > *:nth-child(3) .tb--menu-item_text::after,
-body .tb--fp-container > *:nth-child(4) .tb--menu-item_text::after {
+body .tb--fp-container>*:nth-child(3) [class*="title"]:not([class*="sub"])::after,
+body .tb--fp-container>*:nth-child(4) [class*="title"]:not([class*="sub"])::after,
+body .tb--fp-container>div>*:nth-child(3) [class*="title"]:not([class*="sub"])::after,
+body .tb--fp-container>div>*:nth-child(4) [class*="title"]:not([class*="sub"])::after,
+body .tb--fp-container>*:nth-child(3) .tb--menu-item_text::after,
+body .tb--fp-container>*:nth-child(4) .tb--menu-item_text::after {
     content: "Bahis Oluştur";
 }
 
-body .tb--fp-container > *:nth-child(6) [class*="title"]:not([class*="sub"])::after,
-body .tb--fp-container > div > *:nth-child(6) [class*="title"]:not([class*="sub"])::after,
-body .tb--fp-container > *:nth-child(6) .tb--menu-item_text::after {
+body .tb--fp-container>*:nth-child(6) [class*="title"]:not([class*="sub"])::after,
+body .tb--fp-container>div>*:nth-child(6) [class*="title"]:not([class*="sub"])::after,
+body .tb--fp-container>*:nth-child(6) .tb--menu-item_text::after {
     content: "Fırsatları Yakala";
 }
 
@@ -1045,7 +1076,7 @@ body [class*="to-top"] {
     }
 
     /* WhatsApp / Destek Banner Kapsayicisi (Tek Temiz Kart) */
-    body .header-mobile-menu > div:first-child {
+    body .header-mobile-menu>div:first-child {
         background: #ffffff !important;
         border: 1px solid #d5dce4 !important;
         border-radius: 14px !important;
@@ -1061,20 +1092,20 @@ body [class*="to-top"] {
     }
 
     /* Ic elemanlarin tekrar kart/cerceve yapmasini engelle */
-    body .header-mobile-menu > div:first-child * {
+    body .header-mobile-menu>div:first-child * {
         background: transparent !important;
         border: 0 !important;
         box-shadow: none !important;
     }
 
     /* Slick ve link kapsayicilarini tek yatay siraya diz */
-    body .header-mobile-menu > div:first-child .tb--wb-banner,
-    body .header-mobile-menu > div:first-child .tb--wb-banner > div,
-    body .header-mobile-menu > div:first-child .slick-list,
-    body .header-mobile-menu > div:first-child .slick-track,
-    body .header-mobile-menu > div:first-child .slick-slide,
-    body .header-mobile-menu > div:first-child .banner-grid-item,
-    body .header-mobile-menu > div:first-child a {
+    body .header-mobile-menu>div:first-child .tb--wb-banner,
+    body .header-mobile-menu>div:first-child .tb--wb-banner>div,
+    body .header-mobile-menu>div:first-child .slick-list,
+    body .header-mobile-menu>div:first-child .slick-track,
+    body .header-mobile-menu>div:first-child .slick-slide,
+    body .header-mobile-menu>div:first-child .banner-grid-item,
+    body .header-mobile-menu>div:first-child a {
         display: flex !important;
         flex-direction: row !important;
         align-items: center !important;
@@ -1088,10 +1119,10 @@ body [class*="to-top"] {
     }
 
     /* WhatsApp Ikonunu absolute olmaktan cikar, solda dursun */
-    body .header-mobile-menu > div:first-child img,
-    body .header-mobile-menu > div:first-child [class*="img"],
-    body .header-mobile-menu > div:first-child [class*="icon"],
-    body .header-mobile-menu > div:first-child i {
+    body .header-mobile-menu>div:first-child img,
+    body .header-mobile-menu>div:first-child [class*="img"],
+    body .header-mobile-menu>div:first-child [class*="icon"],
+    body .header-mobile-menu>div:first-child i {
         position: static !important;
         top: auto !important;
         left: auto !important;
@@ -1107,10 +1138,10 @@ body [class*="to-top"] {
     }
 
     /* "Bize Ulasin" Yapisini Duzelt ve Belirgin Yap */
-    body .header-mobile-menu > div:first-child [class*="text"],
-    body .header-mobile-menu > div:first-child span,
-    body .header-mobile-menu > div:first-child p,
-    body .header-mobile-menu > div:first-child a {
+    body .header-mobile-menu>div:first-child [class*="text"],
+    body .header-mobile-menu>div:first-child span,
+    body .header-mobile-menu>div:first-child p,
+    body .header-mobile-menu>div:first-child a {
         position: static !important;
         top: auto !important;
         left: auto !important;
@@ -1169,8 +1200,8 @@ body [class*="to-top"] {
     body .tb--fp-container [class*="fp-item"],
     body .tb--fp-container [class*="rock-item"],
     body .tb--fp-container .swiper-slide,
-    body .tb--fp-container > a,
-    body .tb--fp-container > div > a {
+    body .tb--fp-container>a,
+    body .tb--fp-container>div>a {
         min-width: 190px !important;
         gap: 8px !important;
         padding: 4px 10px !important;
@@ -1189,8 +1220,8 @@ body [class*="to-top"] {
     body .tb--fp-container [class*="text"]:not([class*="sub"]),
     body .tb--fp-container [class*="name"]:not([class*="sub"]),
     body .tb--fp-container .tb--menu-item_text,
-    body .tb--fp-container a > span:first-of-type,
-    body .tb--fp-container [class*="item"] > span:first-of-type {
+    body .tb--fp-container a>span:first-of-type,
+    body .tb--fp-container [class*="item"]>span:first-of-type {
         font-size: 12.5px !important;
         padding: 0 !important;
         overflow: visible !important;
@@ -1467,20 +1498,8 @@ body .footer-container .footer-menu-block_title {
 /* ==========================================================================
    CASINO LOBBY CONTAINER DARLIĞI (Sadece /casino-lobby Sayfası İçin)
    ========================================================================== */
-body:has([class*="casino-lobby"]) .main-block,
-body:has([class*="casino_lobby"]) .main-block,
-body:has([class*="casinolobby"]) .main-block,
-body:has([class*="casino-lobby"]) .main-content,
-body:has([class*="casino_lobby"]) .main-content,
-body:has([class*="casino-lobby"]) .tb--container_with_bg,
-body:has([class*="casino_lobby"]) .tb--container_with_bg,
-body[class*="casino-lobby"] .main-block,
-body[class*="casino_lobby"] .main-block,
-[class*="casino-lobby"],
-[class*="casino_lobby"],
-.tb--casino-lobby,
-.tb--casino-container,
-.tb--casino-games-block {
+
+.wbh-homepage {
     max-width: 1428px !important;
     width: 100% !important;
     margin-left: auto !important;
@@ -1489,7 +1508,3 @@ body[class*="casino_lobby"] .main-block,
     padding-right: 16px !important;
     box-sizing: border-box !important;
 }
-
-
-
-
