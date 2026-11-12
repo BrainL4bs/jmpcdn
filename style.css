@@ -1464,5 +1464,32 @@ body .footer-container .footer-menu-block_title {
     display: none !important;
 }
 
+/* ==========================================================================
+   CASINO LOBBY CONTAINER DARLIĞI (Sadece /casino-lobby Sayfası İçin)
+   ========================================================================== */
+body:has([class*="casino-lobby"]) .main-block,
+body:has([class*="casino_lobby"]) .main-block,
+body:has([class*="casinolobby"]) .main-block,
+body:has([class*="casino-lobby"]) .main-content,
+body:has([class*="casino_lobby"]) .main-content,
+body:has([class*="casino-lobby"]) .tb--container_with_bg,
+body:has([class*="casino_lobby"]) .tb--container_with_bg,
+body[class*="casino-lobby"] .main-block,
+body[class*="casino_lobby"] .main-block,
+[class*="casino-lobby"],
+[class*="casino_lobby"],
+.tb--casino-lobby,
+.tb--casino-container,
+.tb--casino-games-block {
+    max-width: 1428px !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    box-sizing: border-box !important;
+}
+
+
 
 
